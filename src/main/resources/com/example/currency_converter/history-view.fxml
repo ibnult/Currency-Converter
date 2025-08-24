@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.currency_converter.HistoryController"
+      spacing="15" alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- table -->
+    <TableView fx:id="historyTable" prefHeight="200" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="fromCol" text="From" prefWidth="80"/>
+            <TableColumn fx:id="toCol" text="To" prefWidth="80"/>
+            <TableColumn fx:id="amountCol" text="Amount" prefWidth="80"/>
+            <TableColumn fx:id="resultCol" text="Result" prefWidth="80"/>
+        </columns>
+    </TableView>
+
+
+    <Button text="Back" onAction="#handleBack" maxWidth="150"/>
+</VBox>
