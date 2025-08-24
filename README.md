@@ -26,6 +26,15 @@ Design a simple Currency Converter application with **two scenes**:
   - Returns to the main converter scene.
 
 ---
+## Features
+- Convert currencies between USD, EUR, BDT
+- View conversion history in a table
+
+## Usage
+1. Enter amount
+2. Select From and To currencies
+3. Click Convert
+4. Click View History to see past conversions
 
 ## Validations
 1. The **amount field** must not be empty and must contain valid numeric data.
